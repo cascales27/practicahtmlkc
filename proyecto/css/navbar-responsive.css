@@ -1,0 +1,118 @@
+.navbar {
+    background-color: green;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar-list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-item a {
+    color: aliceblue;
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    background-color: lightgreen;
+    transition: all .5s;
+}
+
+.burguer-label {
+    color: black;
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+}
+
+#burguer-checkbox {
+    display: none;
+}
+
+.buscador {
+    position: relative;
+    top: 15%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.cierre {
+    position: relative;
+    top: 70%;
+    left: 1270%;
+    bottom: px;
+    border-radius: 15px;
+    transform: translate3d(-50%, -50%);
+}
+.cierre:hover{
+    background-color: aqua;
+    box-shadow: 3px solid goldenrod;
+}
+input.buscador-dentro {
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: chartreuse;
+    border: 3px solid gold;
+}
+
+
+input.buscador-dentro:hover {
+    width: 180px;
+    background-color: aqua;
+    border-color: darkgreen;
+    box-shadow: 0 0 5px ;
+}
+
+
+@media(max-width:1024px) {
+
+    .navbar {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .burguer-label {
+        display: block;
+    }
+
+    .navbar .logo {
+        margin-left: 1rem;
+        justify-content: center;
+    }
+
+    .navbar-list {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        color: aliceblue;
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    .navbar-item {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    #burguer-checkbox:checked ~ .navbar-list {
+        left: 0;
+    }
+}

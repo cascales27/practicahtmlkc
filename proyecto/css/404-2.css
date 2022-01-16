@@ -1,0 +1,145 @@
+*{
+    background-color: darkblue;
+}
+
+
+.error-container {
+	text-align: center;
+	font-size: 180px;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 800;
+	margin: 20px 15px;
+}
+.error-container > span {
+	display: inline-block;
+	line-height: 0.7;
+	position: relative;
+	color: #6b93c7;
+}
+.error-container > span > span {
+	display: inline-block;
+	position: relative;
+}
+.error-container > span:nth-of-type(1) {
+	perspective: 1000px;
+	perspective-origin: 500% 50%;
+	color: #b99fe9;
+}
+.error-container > span:nth-of-type(1) > span {
+	transform-origin: 50% 100% 0px;
+	transform: rotateX(0);
+	animation: easyoutelastic 8s infinite;
+}
+.error-container > span:nth-of-type(3) {
+	perspective: none;
+	perspective-origin: 50% 50%;
+	color: #49d689;
+}
+.error-container > span:nth-of-type(3) > span {
+	transform-origin: 100% 100% 0px;
+	transform: rotate(0deg);
+	animation: rotatedrop 8s infinite;
+}
+
+
+* {
+    font-family: 'Ubuntu', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: green;
+}
+
+.main {
+    margin: 2rem;
+}
+
+.error-code {
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin: 0;
+    letter-spacing: -1.4rem;
+}
+
+.error-code span {
+    text-shadow: -5px 0 0 black;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.action {
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(3, 102, 47);
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+@keyframes easyoutelastic {
+	0% {
+		transform: rotateX(0);
+	}
+	9% {
+		transform: rotateX(210deg);
+	}
+	13% {
+		transform: rotateX(150deg);
+	}
+	16% {
+		transform: rotateX(200deg);
+	}
+	18% {
+		transform: rotateX(170deg);
+	}
+	20% {
+		transform: rotateX(180deg);
+	}
+	60% {
+		transform: rotateX(180deg);
+	}
+	80% {
+		transform: rotateX(0);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
+
+@keyframes rotatedrop {
+	0% {
+		transform: rotate(0);
+	}
+	10% {
+		transform: rotate(30deg);
+	}
+	15% {
+		transform: rotate(90deg);
+	}
+	70% {
+		transform: rotate(90deg);
+	}
+	80% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}

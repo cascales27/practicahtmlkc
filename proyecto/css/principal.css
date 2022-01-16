@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.detalle {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.texto-aparece {
+    background-color: rgba(100, 200, 100, 0.4);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    font-weight: bold;
+    color: black;
+}
+
+ .texto-aparece:hover {
+    background-color: rgba(100, 250, 100, 0.6);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    transform: translateY(-75%);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.star {
+    visibility:hidden;
+    font-size:30px;
+    cursor:pointer;
+    color: gold;
+}
+.star:before {
+   content: "\2605";
+   position: absolute;
+   visibility:visible;
+}
+.star:checked:before {
+   content: "\2606";
+   position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

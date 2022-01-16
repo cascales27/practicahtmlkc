@@ -1,0 +1,59 @@
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 50px;
+}
+
+.wraper {
+    height: 100vh;
+}
+
+
+.tag {
+    position: relative;
+    background-color: black;
+    width: 11.5rem;
+    height: 7.5rem;
+    z-index: -1;
+    font-weight: bold;
+    color: brown;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: brown;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.countdown {
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+}
+
+.countdown .time {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 1rem;
+    margin: 0 10px 0 0;
+}
+
+.countdown .time .number {
+    font-size: 3rem;
+}
+
+#subscribe-form {
+    margin: 3rem 0;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+
+#subscribe-form .email {
+    margin-right: 1rem;
+}

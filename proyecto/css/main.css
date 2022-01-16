@@ -1,0 +1,98 @@
+ .img {
+   max-width: 100%;
+ }
+
+ .detalle {
+   width: 250 px;
+   position: relative;
+   overflow: hidden;
+ }
+.container > h1{
+    float: right;
+    color: green;
+    background-color: black;
+    width: 350px;
+}
+.container {
+    display: flex;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.container > a {
+    display: inline-block;
+    margin: 0 .5rem;
+    vertical-align: middle;
+    width: 350px;
+    max-height: auto;
+}
+
+.star {
+    visibility:hidden;
+    font-size:30px;
+    cursor:pointer;
+    color: gold;
+}
+.star:before {
+   content: "\2605";
+   position: absolute;
+   visibility:visible;
+}
+.star:checked:before {
+   content: "\2606";
+   position: absolute;
+}
+
+.rejilla .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center; 
+    background-color: darkgreen;
+  }
+  .rejilla > li {
+    width: 228px; 
+  }
+  .rejilla a {
+    display: block; 
+    padding: 15px;
+  }
+  .rejilla a:hover {
+    box-shadow: 0 0 0 2px #ccc; 
+  }
+  .rejilla img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.peliculas-destacadas {
+
+    color: green;
+    background-color: black;
+    width: 350px;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+ .texto-aparece {
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    transform: translateY(100%);
+}
+
+.detalle:hover  .texto-aparece {
+   
+transform: translateY();
+
+
+
+}
+  background-color: green;
+  color: aliceblue;
+  display: block;
+  transition: all .5s;
+  height: auto;
+  width: 100%;
+}

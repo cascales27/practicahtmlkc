@@ -1,0 +1,50 @@
+.p-sinopsis {
+    width: 250px;
+    height: 250px;
+    max-height: 250px;
+    background-color: green;
+    display: block;
+    overflow-y: scroll;
+}
+
+.header {
+    max-width: max-content;
+}
+.main{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    background-color: darkgreen;
+}
+
+.rejilla .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center; 
+    background-color: darkgreen;
+  }
+  .rejilla > li {
+    width: 250px; 
+  }
+  .rejilla a {
+    display: block; 
+    padding: 15px;
+  }
+  .rejilla a:hover {
+    box-shadow: 0 0 0 2px #ccc; 
+  }
+  .rejilla img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

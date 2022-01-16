@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepitoFlix Login</title>
+    <link rel="icon" type="icon/png" href="./img/logopepitoverde.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar-responsive.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        
+        <input type="checkbox" id="burguer-checkbox">
+        <label for="burguer-checkbox" class="burguer-label">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <span class="logo">
+            <a href="#header">
+                <img src="./img/logopepitoverde.PNG" alt="Logo de la página">
+            </a>
+        </span>
+
+       
+
+        
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#series-tv">Series TV</a></li>
+            <li class="navbar-item"><a href="#peliculas">Peliculas</a></li>
+            <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+            <li class="navbar-item"><a href="#mi-lista">Mi lista</a></li>
+            <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+            <li class="navbar-item"><input type="text" name="search" placeholder="Buscar" class="buscador-dentro" autocomplete="off"></a></li>
+            <li class="navbar-item"><a class="fa fa-power-off"><input  class="cierre" type="submit" name="miboton" value="Cerrar sesión"></a></li>
+        </ul>
+
+
+    </nav>
+    <header id="header" class="header">
+        <div class="header-overlay"></div>
+            <div class="header-content">
+            <h1 class="logo"><img src="./img/logopepitoverde.PNG" alt="Logo de la página"></h1>
+            <p class="tagline">Un mundo lleno de entretenimiento para toda la familia.</p>
+            </div>  
+    </header>
+    <form id="form" class="form-validate">
+		
+        <input class="controles" id="email" type="email" placeholder="Usuario"><br><br>
+        <input class="controles" id="password" type="password" placeholder="Contraseña"><br><br>
+        <a href="./principal.html" class="button">Entrar</a>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+    </form>
+</form>
+
+<footer class="footer">
+    <aside class="social">
+        <p>Enlaces de interés:</p>
+       <ul class="social-list">
+           <li><a href="./principal.html" target=" _blank" rel="noreferrer noopener">Facebook</a></li>
+           <li><a href="./principal.html" target=" _blank" rel="noreferrer noopener">Instagram</a></li>
+           <li><a href="./principal.html" target=" _blank" rel="noreferrer noopener">Twitter</a></li>
+       </ul>
+    </aside>
+
+
+    <aside class="info">
+        <ul class="info-list">
+            <li><a href="./index.html" target=" _blank" rel="noreferrer noopener">Audio y subtitulos</a></li>
+            <li><a href="./index.html" target=" _blank" rel="noreferrer noopener">FAQ</a></li>
+            <li><a href="./index.html" target=" _blank" rel="noreferrer noopener">Centro de ayuda</a></li>
+        </ul>
+    </aside>
+
+    <aside class="info-2">
+        <ul class="info-list-2">
+            <li><a href="./404.html" target=" _blank" rel="noreferrer noopener">Avisos legales</a></li>
+            <li><a href="./404.html" target=" _blank" rel="noreferrer noopener">Preferencias de cookies</a></li>
+            <li><a href="./404.html" target=" _blank" rel="noreferrer noopener">Terminos de uso</a></li>
+        </ul>
+    </aside>
+</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.footer {
+    background-color: green;
+    color: aliceblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    position: sticky;
+    bottom: 0;
+}
+
+.footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
